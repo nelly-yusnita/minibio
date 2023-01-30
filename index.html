@@ -13,102 +13,356 @@
 	<!-- ===== REMIXICONS ===== -->
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+	<!-- ===== MATERIAL ICONS ===== -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- ===== SWIPER CSS ===== -->
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+	<!-- ===== FANCYAPPS CSS ===== -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+
 	<!-- ===== MAIN CSS ===== -->
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<title>Nelly Yusnita - Mini Bio</title>
 </head>
-<body>
+<body onload="initClock()">
 	<!-- ===== HEADER ===== -->
-	<header class="profile container">
-		<!-- Theme button -->
-		<i class="ri-moon-line change-theme" id="theme-button"></i>
-
-		<div class="profile__container grid">
-			<div class="profile__data">
-				<div class="profile__border">
-					<div class="profile__picture">
-						<img src="assets/img/profile.jpg" alt="profile image">
-					</div>
-
-					<img src="assets/img/shape-waves.svg" alt="profile shape waves" class="profile__shape-waves">
-					<img src="assets/img/shape-circle.svg" alt="profile shape circle" class="profile__shape-circle">
-				</div>
-
-				<h2 class="profile__name">Nelly Yusnita</h2>
-
-				<div class="profile__subtitle grid">
-					<span>&mdash; 💻🍵😴🖤</span>
-					<span>Eccleasiastes 3:1</span>
-					<span>intj 🌹 (taylor's version)</span>
-					<span>📌 Jakarta - Indonesia</span>
-				</div>
-
-				<div class="profile__buttons">
-					<!-- Instagram -->
-					<a href="https://www.instagram.com/nellyyusnita_/" class="button" target="_blank">
-						<i class="ri-instagram-line"></i>
-					</a>
-
-					<!-- TikTok -->
-					<a href="https://www.tiktok.com/@nellyyusnita_" class="button" target="_blank">
-						<i class='bx bxl-tiktok'></i>
-					</a>
-
-					<!-- Facebook -->
-					<a href="https://www.facebook.com/profile.php?id=100009298274433" class="button" target="_blank">
-						<i class='bx bxl-facebook'></i>
-					</a>
-				</div>
+	<header class="header container">
+		<!-- Date & time -->
+		<div class="digital__date-time">
+			<div class="date__section">
+				<span id="day-name">Day</span>,
+				<span id="day-num">00</span>
+				<span id="month">Month</span>
+				<span id="year">Year</span>
 			</div>
 
-			<div class="main grid">
-				<div class="content__list">
-					<!-- Portfolio -->
+			<div class="time__section">
+				<span id="hour">00</span> :
+				<span id="minutes">00</span> :
+				<span id="seconds">00</span>
+				<span id="period">AM</span>
+			</div>
+		</div>
+		
+		<!-- Theme button -->
+		<i class="ri-moon-line change-theme" id="theme-button"></i>
+	</header>
+	<!-- ===== end header ===== -->
+
+	<!-- ===== MAIN ===== -->
+	<main>
+		<!-- ===== FIRST SECTION ===== -->
+		<div class="first__section container grid">
+			<!-- Profile -->
+			<div class="profile">
+				<div class="profile__container">
+					<div class="profile__border">
+						<div class="profile__picture">
+							<img src="assets/img/profile.jpg" alt="profile image" class="profile__img">
+						</div>
+
+						<img src="assets/img/shape-waves.svg" alt="profile shape waves" class="profile__shape-waves">
+						<img src="assets/img/shape-circle.svg" alt="profile shape circle" class="profile__shape-circle">
+					</div>
+
+					<h2 class="profile__name">Nelly Yusnita</h2>
+
+					<div class="profile__subtitle grid">
+						<span>&mdash; 💻🍵😴🖤</span>
+						<span>Ecclesiastes 3:1</span>
+						<span>intj 🌹 (taylor's version)</span>
+						<span>📌 Jakarta, Indonesia</span>
+					</div>
+
+					<div class="profile__buttons">
+						<!-- Instagram -->
+						<a href="https://www.instagram.com/nellyyusnita_/" class="profile__button-link" target="_blank">
+							<i class="ri-instagram-line"></i>
+						</a>
+
+						<!-- TikTok -->
+						<a href="https://www.tiktok.com/@nellyyusnita_" class="profile__button-link" target="_blank">
+							<i class='bx bxl-tiktok'></i>
+						</a>
+
+						<!-- Facebook -->
+						<a href="https://www.facebook.com/profile.php?id=100009298274433" class="profile__button-link" target="_blank">
+							<i class='bx bxl-facebook'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- end profile -->
+
+			<!-- Content Links -->
+			<div class="content">
+				<div class="content__container">
+					<!-- My Mini Portfolio -->
 					<a href="https://nelly-yusnita.github.io/miniportfolio/" class="content__item content__item-1" target="_blank">
 						<span>My Mini Portfolio </span>💻 
 					</a>
 
-					<!-- Youtube Channel -->
+					<!-- Tutorial/Mini Vlog -->
 					<a href="https://www.youtube.com/channel/UCgKHU1zY53lapz1ehpUZcRQ" class="content__item content__item-2" target="_blank">
-						<span>Tutorial/Mini Vlog </span>📸
+						<span>Tutorial/Mini Vlog </span>📹
 					</a>
 
-					<!-- Undang Digital Aja -->
+					<!-- Digital Invitation -->
 					<a href="https://nelly-yusnita.github.io/undangdigitalajaclose/" class="content__item content__item-3" target="_blank">
 						<span>Digital Invitation </span>💐
 					</a>
+
+					<!-- Learn English -->
+					<a href="#" class="content__item content__item-4" target="_blank">
+						<span>Learn English </span>🗣️
+					</a>
 				</div>
+			</div>
+			<!-- end content links -->
+		</div>
+		<!-- ===== end first section ====== -->
 
-				<div class="hobbies grid">
-					<div class="hobby__box">
-						<img src="assets/img/hobby1.jpg" alt="hobby image" class="hobby__img">
-						<span class="hobby__description">coding</span>
+		<!-- ===== SECOND SECTION ===== -->
+		<div class="second__section container section">
+			<!-- Gallery -->
+			<div class="gallery">
+				<div class="gallery__container swiper">
+					<span class="gallery__title">Gallery🖼️ (10)</span>
+
+					<!-- Gallery swiper buttons -->
+					<div class="swiper-button-next">
+						<i class='bx bx-chevron-right'></i>
+					</div>
+					<div class="swiper-button-prev">
+						<i class='bx bx-chevron-left'></i>
 					</div>
 
-					<div class="hobby__box">
-						<img src="assets/img/hobby5.jpg" alt="hobby image" class="hobby__img">
-						<span class="hobby__description">music</span>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="gallery__box">
+								<a href="assets/img/gallery-1.jpg" data-fancybox="gallery" data-caption="Thank you for saving me✨">
+									<img src="assets/img/gallery-1.jpg" alt="gallery image" class="gallery__img">
+								</a>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="gallery__box">
+								<a href="assets/img/gallery-2.jpg" data-fancybox="gallery" data-caption="Macha lovers🍵">
+									<img src="assets/img/gallery-2.jpg" alt="gallery image" class="gallery__img">
+								</a>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="gallery__box">
+								<a href="assets/img/gallery-3.jpg" data-fancybox="gallery" data-caption="Fav movie from Studio Ghibli🍃">
+									<img src="assets/img/gallery-3.jpg" alt="gallery image" class="gallery__img">
+								</a>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="gallery__box">
+								<a href="assets/img/gallery-4.jpg" data-fancybox="gallery" data-caption="NOT a religious person, but...">
+									<img src="assets/img/gallery-4.jpg" alt="gallery image" class="gallery__img">
+								</a>
+							</div>
+						</div>
+
+
+						<div class="swiper-slide">
+							<div class="gallery__box">
+								<a href="assets/img/gallery-5.jpg" data-fancybox="gallery" data-caption="When I don't know 'where to go', I'll take a long MRT trip without destination🚄">
+									<img src="assets/img/gallery-5.jpg" alt="gallery image" class="gallery__img">
+								</a>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="gallery__box">
+								<a href="assets/img/gallery-6.jpg" data-fancybox="gallery" data-caption="Dear 2019, the sunset is beautiful, isn't it?☀️">
+									<img src="assets/img/gallery-6.jpg" alt="gallery image" class="gallery__img">
+								</a>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="gallery__box">
+								<a href="assets/img/gallery-7.jpg" data-fancybox="gallery" data-caption="Tired, but it's oke🌆">
+									<img src="assets/img/gallery-7.jpg" alt="gallery image" class="gallery__img">
+								</a>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="gallery__box">
+								<a href="assets/img/gallery-8.jpg" data-fancybox="gallery" data-caption="🐈">
+									<img src="assets/img/gallery-8.jpg" alt="gallery image" class="gallery__img">
+								</a>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="gallery__box">
+								<a href="assets/img/gallery-9.jpg" data-fancybox="gallery" data-caption="idk why my brain so fresh at night🌌">
+									<img src="assets/img/gallery-9.jpg" alt="gallery image" class="gallery__img">
+								</a>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="gallery__box">
+								<a href="assets/img/gallery-10.jpg" data-fancybox="gallery" data-caption="no matter what, love urselft first🖤">
+									<img src="assets/img/gallery-10.jpg" alt="gallery image" class="gallery__img">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end gallery -->
+
+			<!-- Playlist -->
+			<div class="playlist" id="playlist">
+				<span class="playlist__title">My Playlist💗 (10)</span>
+
+				<div class="playlist__container">
+					<div class="playlist__content">
+						<div class="playlist__data">
+							<div class="playlist__img">
+								<img src="" alt="playlist image">
+							</div>
+
+							<div class="playlist__information">
+								<div class="song__info">
+									<h3 class="song__title">Style</h3>
+									<span class="song__artist">Taylor Swift</span>
+								</div>
+
+								<div class="playlist__progress-area">
+									<div class="playlist__progress-bar"></div>
+
+									<div class="playlist__timer">
+										<span class="song__current">0:00</span>
+										<span class="song__duration"></span>
+									</div>
+
+									<audio id="main-audio" src=""></audio>
+								</div>
+							</div>
+						</div>
+
+						<div class="playlist__controls">
+							<i id="repeat-playlist" class="material-icons" title="Playlist looped">repeat</i>
+
+							<i id="prev-song" class="material-icons">skip_previous</i>
+
+							<div class="song__play-pause">
+								<i class="material-icons">play_arrow</i>
+							</div>
+
+							<i id="next-song" class="material-icons">skip_next</i>
+
+							<i class='bx bxs-heart'></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end playlist -->
+		</div>
+		<!-- ===== end second section ====== -->
+
+		<!-- ===== THIRD SECTION -->
+		<!-- Blog -->
+		<div class="blog container section">
+			<div class="blog__content-box">
+				<span class="blog__title">Blog📑</span>
+
+				<div class="blog__container swiper">
+					<div class="swiper-wrapper">
+						<!-- 1 -->
+						<div class="swiper-slide">
+							<div class="blog__content">
+								<div class="blog__img-box">
+									<img src="assets/img/gallery-2.jpg" alt="blog image">
+								</div>
+
+								<div class="blog__data">
+									<span class="blog__subtitle">Wed, 10 DEC 2022</span>
+									<h3 class="blog__title">Lorem ipsum, dolor sit.</h3>
+									<a href="#" class="blog__button">READ MORE</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- 2 -->
+						<div class="swiper-slide">
+							<div class="blog__content">
+								<div class="blog__img-box">
+									<img src="assets/img/gallery-8.jpg" alt="blog image">
+								</div>
+
+								<div class="blog__data">
+									<span class="blog__subtitle">Wed, 10 DEC 2022</span>
+									<h3 class="blog__title">Lorem ipsum, dolor sit.</h3>
+									<a href="#" class="blog__button">READ MORE</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- 3 -->
+						<div class="swiper-slide">
+							<div class="blog__content">
+								<div class="blog__img-box">
+									<img src="assets/img/gallery-7.jpg" alt="blog image">
+								</div>
+
+								<div class="blog__data">
+									<span class="blog__subtitle">Wed, 10 DEC 2022</span>
+									<h3 class="blog__title">Lorem ipsum, dolor sit.</h3>
+									<a href="#" class="blog__button">READ MORE</a>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div class="hobby__box">
-						<img src="assets/img/hobby3.jpg" alt="hobby image" class="hobby__img">
-						<span class="hobby__description">watch</span>
+					<!-- Navigation -->
+					<div class="swiper-button-next">
+						<i class='bx bx-chevron-right'></i>
 					</div>
 
-					<div class="hobby__box">
-						<img src="assets/img/hobby4.jpg" alt="hobby image" class="hobby__img">
-						<span class="hobby__description">sleep💯</span>
+					<div class="swiper-button-prev">
+						<i class='bx bx-chevron-left'></i>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
-	<!-- ===== end header ===== -->
+		<!-- end blog -->
+		<!-- ===== end third section ===== -->
+	</main>
+	<!-- ===== end main ===== -->
 
 	<!-- ===== FOOTER ===== -->
-	<span class="footer container">&#169;2022 - By Nelly Yusnita</span>
+	<div class="footer container">
+		<span>&#169;2023 - Created by Nelly Yusnita</span>
+	</div>
 	<!-- ===== end footer ===== -->
+
+	<!-- ===== SCROLL UP ===== -->
+	<a href="#" class="scrollup" id="scroll-up">
+		<i class='bx bx-up-arrow-alt scrollup__icon'></i> 
+	</a>
+	<!-- ===== end scroll up ===== -->
+
+	<!-- ===== SWIPER JS ===== -->
+	<script src="assets/js/swiper-bundle.min.js"></script>
+
+	<!-- ===== FANCYAPPS JS ===== -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
 	<!-- ===== SCROLL REVEAL ===== -->
 	<script src="assets/js/scrollreveal.min.js"></script>
