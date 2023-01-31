@@ -106,7 +106,7 @@ img{
    -webkit-box-pack: justify;
        -ms-flex-pack: justify;
            justify-content: space-between;
-   margin-top: 4.5rem;
+   margin-top: 3rem;
 }
 .digital__date-time{
    font-size: var(--small-font-size);
@@ -370,7 +370,8 @@ body.dark-theme{
 
 /* Playlist */
 .playlist{
-   margin: 4rem 0 2rem;
+   margin-top: 4rem;
+   margin-bottom: 2rem;
    background-color: #FFF;
    padding: 0.5rem;
    border-radius: .75rem;
@@ -548,7 +549,8 @@ body.dark-theme{
 
 /* Blog */
 .blog{
-   margin: 4rem 0 5rem;
+   margin-top: 4rem;
+   margin-bottom: 5rem;
 }
 .blog__content-box{
    background-color: #FFF;
