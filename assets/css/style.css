@@ -86,9 +86,6 @@ img{
    display: -ms-grid;
    display: grid;
 }
-.section{
-   padding: 4rem 0 2rem;
-}
 /* ===== end reusable css classes ===== */
 
 /* ===== SCROLL BAR ===== */
@@ -106,16 +103,13 @@ img{
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
-   -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
    -webkit-box-pack: justify;
        -ms-flex-pack: justify;
            justify-content: space-between;
-   margin-top: 1.5rem;
+   margin-top: 4.5rem;
 }
 .digital__date-time{
-   font-size: var(--normal-font-size);
+   font-size: var(--small-font-size);
 }
 .change-theme{
    font-size: 1.25rem;
@@ -157,7 +151,7 @@ body.dark-theme{
 /* ===== MAIN ===== */
 /* Profile */
 .first__section{
-   padding: 4rem 0 3.5rem;
+   padding: 4rem 0;
    grid-row-gap: 2.25rem;
 }
 .profile__border{
@@ -553,6 +547,9 @@ body.dark-theme{
 }
 
 /* Blog */
+.blog{
+   margin: 4rem 0 5rem;
+}
 .blog__content-box{
    background-color: #FFF;
    padding: .5rem;
@@ -722,27 +719,10 @@ body.dark-theme{
       width: 75px;
    }
 
-   .second__section{
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 60% 40%;
-          grid-template-columns: 60% 40%;
-      grid-column-gap: 1.5rem;
-   }
-
    /* Gallery */
-   .gallery{
-      margin-bottom: 0;
-   }
    .gallery__box{
       width: 100px;
       height: 100px;
-   }
-
-   /* Playlist */
-   .playlist{
-      max-width: calc(100% - 1.5rem);
-      margin: 0;
    }
    /* ===== end main ===== */
 }
@@ -782,19 +762,10 @@ body.dark-theme{
       width: 80px;
    }
 
-   .second__section{
-      grid-column-gap: 2rem;
-   }
-
    /* Gallery */
    .gallery__box{
       width: 120px;
       height: 120px;
-   }
-
-   /* Playlist */
-   .playlist{
-      max-width: calc(100% - 2rem);
    }
    /* ===== end main ===== */
 }

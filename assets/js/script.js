@@ -367,5 +367,5 @@ const sr = ScrollReveal({
 	delay: 400,
 })
 
-sr.reveal(`.profile__border, .profile__name, .profile__subtitle, .profile__buttons, .content, .second__section, .blog`);
+sr.reveal(`.profile__border, .profile__name, .profile__subtitle, .profile__buttons, .content, .gallery, .playlist, .blog`);
 
