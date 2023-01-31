@@ -437,8 +437,8 @@ body.dark-theme{
    background: -webkit-linear-gradient(left, var(--green-color-2) 0%, var(--green-color-3) 100%);
    background: linear-gradient(90deg, var(--green-color-2) 0%, var(--green-color-3) 100%);
 }
-.playlist__progress-bar:before{
-   content: "";
+.playlist__progress-bar::before{
+   content: '';
    position: absolute;
    height: 12px;
    width: 12px;
@@ -455,7 +455,7 @@ body.dark-theme{
    -webkit-transition: opacity 0.2s ease;
    transition: opacity 0.2s ease;
 }
-.playlist__progress-area:hover .playlist__progress-bar{
+.playlist__progress-area:hover .playlist__progress-bar::before{
    opacity: 1;
    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
    pointer-events: auto;

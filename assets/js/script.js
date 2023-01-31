@@ -94,7 +94,7 @@ let allMusic = [
 
 	// 2. Taylor Swift - You re On Your Own Kid
 	{
-		name:"You re On Your Own Kid",
+		name:"You're On Your Own Kid",
 		artist: "Taylor Swift",
 		img: "ts-yoyok-img",
 		src: "Taylor Swift - You re On Your Own Kid"
@@ -211,7 +211,6 @@ function prevMusic(){
   musicIndex < 1 ? musicIndex = allMusic.length : musicIndex = musicIndex;
   loadMusic(musicIndex);
   playMusic();
-  playingSong(); 
 }
 
 //next music function
@@ -220,8 +219,7 @@ function nextMusic(){
   //if musicIndex is greater than array length then musicIndex will be 1 so the first music play
   musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
   loadMusic(musicIndex);
-  playMusic();
-  playingSong(); 
+  playMusic(); 
 }
 
 // play or pause button event
@@ -229,7 +227,6 @@ playPauseBtn.addEventListener("click", ()=>{
   const isMusicPlay = playlist.classList.contains("paused");
   //if isPlayMusic is true then call pauseMusic else call playMusic
   isMusicPlay ? pauseMusic() : playMusic();
-  playingSong();
 });
 
 //prev music button event
@@ -278,7 +275,6 @@ progressArea.addEventListener("click", (e)=>{
   
   mainAudio.currentTime = (clickedOffsetX / progressWidth) * songDuration;
   playMusic(); //calling playMusic function
-  playingSong();
 });
 
 //change loop, shuffle, repeat icon onclick
