@@ -29,216 +29,230 @@
 </head>
 <body onload="initClock()">
 	<!-- ===== HEADER ===== -->
-	<header class="header container">
-		<!-- Date & time -->
-		<div class="digital__date-time">
-			<div class="date__section">
-				<span id="day-name">Day</span>,
-				<span id="day-num">00</span>
-				<span id="month">Month</span>
-				<span id="year">Year</span>
+	<header>
+		<div class="header__container">
+			<div class="header__section-banner">
+				<img src="assets/img/header-section-min.gif" alt="header image" class="header__section-min">
+
+				<img src="assets/img/header-section-max.jpg" alt="header image" class="header__section-max">
 			</div>
 
-			<div class="time__section">
-				<span id="hour">00</span> :
-				<span id="minutes">00</span> :
-				<span id="seconds">00</span>
-				<span id="period">AM</span>
+			<div class="header__content container">
+				<img src="assets/img/profile-img.jpg" alt="profile image" class="profile__img">
+
+				<!-- Theme button -->
+				<i class="ri-moon-line change-theme" id="theme-button"></i>
 			</div>
 		</div>
-		
-		<!-- Theme button -->
-		<i class="ri-moon-line change-theme" id="theme-button"></i>
 	</header>
 	<!-- ===== end header ===== -->
 
-	<!-- ===== MAIN ===== -->
-	<main>
-		<!-- ===== FIRST SECTION ===== -->
-		<div class="first__section container grid">
-			<!-- Profile -->
-			<div class="profile">
-				<div class="profile__container">
-					<div class="profile__border">
-						<div class="profile__picture">
-							<img src="assets/img/profile.jpg" alt="profile image" class="profile__img">
-						</div>
+	<!-- ===== BIO ===== -->
+	<section class="bio container section__line-bottom">
+		<div class="bio__container">
+			<h2 class="bio__name">Nelly Yusnita</h2>
 
-						<img src="assets/img/shape-waves.svg" alt="profile shape waves" class="profile__shape-waves">
-						<img src="assets/img/shape-circle.svg" alt="profile shape circle" class="profile__shape-circle">
-					</div>
-
-					<h2 class="profile__name">Nelly Yusnita</h2>
-
-					<div class="profile__subtitle grid">
-						<span>&mdash; 💻🍵😴🖤</span>
-						<span>Ecclesiastes 3:1</span>
-						<span>intj 🌹 (taylor's version)</span>
-						<span>📌 Jakarta, Indonesia</span>
-					</div>
-
-					<div class="profile__buttons">
-						<!-- Instagram -->
-						<a href="https://www.instagram.com/nellyyusnita_/" class="profile__button-link" target="_blank">
-							<i class="ri-instagram-line"></i>
-						</a>
-
-						<!-- TikTok -->
-						<a href="https://www.tiktok.com/@nellyyusnita_" class="profile__button-link" target="_blank">
-							<i class='bx bxl-tiktok'></i>
-						</a>
-
-						<!-- Facebook -->
-						<a href="https://www.facebook.com/profile.php?id=100009298274433" class="profile__button-link" target="_blank">
-							<i class='bx bxl-facebook'></i>
-						</a>
-					</div>
-				</div>
+			<div class="bio__subtitle">
+				<span>&mdash; 💻🍵😴🖤</span>
+				<span>Ecclesiastes 3:1</span>
+				<span>intj 🌹 (taylor's version)</span>
+				<span>📌 Jakarta, Indonesia</span>
 			</div>
-			<!-- end profile -->
-
-			<!-- Content Links -->
-			<div class="content">
-				<div class="content__container">
-					<!-- My Mini Portfolio -->
-					<a href="https://nelly-yusnita.github.io/miniportfolio/" class="content__item content__item-1" target="_blank">
-						<span>My Mini Portfolio </span>💻 
-					</a>
-
-					<!-- Tutorial/Mini Vlog -->
-					<a href="https://www.youtube.com/channel/UCgKHU1zY53lapz1ehpUZcRQ" class="content__item content__item-2" target="_blank">
-						<span>Tutorial/Mini Vlog </span>📹
-					</a>
-
-					<!-- Digital Invitation -->
-					<a href="https://nelly-yusnita.github.io/undangdigitalajaclose/" class="content__item content__item-3" target="_blank">
-						<span>Digital Invitation </span>💐
-					</a>
-
-					<!-- Learn English -->
-					<a href="#" class="content__item content__item-4" target="_blank">
-						<span>Learn English </span>🗣️
-					</a>
-				</div>
-			</div>
-			<!-- end content links -->
 		</div>
-		<!-- ===== end first section ====== -->
+	</section>
+	<!-- ===== end bio ===== -->
 
-		<!-- ===== SECOND SECTION ===== -->
-		<!-- Gallery -->
-		<div class="gallery container">
-			<div class="gallery__container swiper">
-				<span class="gallery__title">Gallery🖼️ (10)</span>
+	<!-- ===== CONTENT LINKS ===== -->
+	<section class="content container section__line-bottom section__top-space">
+		<div class="content__container">
+			<div class="content__box">
+				<img src="assets/img/content-img.jpg" alt="content image" class="content__img">
 
-				<!-- Gallery swiper buttons -->
-				<div class="swiper-button-next">
-					<i class='bx bx-chevron-right'></i>
+				<div class="content__hobbies">💻 coding // 🎬 watch // music🎧 // 😴 sleep // 🍔 eat</div>
+
+				<div class="social__media">
+					<!-- Instagram -->
+					<a href="https://www.instagram.com/nellyyusnita_/" class="social__button-link" target="_blank">
+						<i class="ri-instagram-line"></i>
+					</a>
+
+					<!-- TikTok -->
+					<a href="https://www.tiktok.com/@nellyyusnita_" class="social__button-link" target="_blank">
+						<i class='bx bxl-tiktok'></i>
+					</a>
+
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/profile.php?id=100009298274433" class="social__button-link" target="_blank">
+						<i class='bx bxl-facebook'></i>
+					</a>
 				</div>
-				<div class="swiper-button-prev">
-					<i class='bx bx-chevron-left'></i>
+			</div>
+
+			<div class="content__box">
+				<!-- My Mini Portfolio -->
+				<a href="https://nelly-yusnita.github.io/miniportfolio/" class="content__item content__item-1" target="_blank">
+					<span>My Mini Portfolio </span>💻 
+				</a>
+
+				<!-- Tutorial/Mini Vlog -->
+				<a href="https://www.youtube.com/channel/UCgKHU1zY53lapz1ehpUZcRQ" class="content__item content__item-2" target="_blank">
+					<span>Tutorial/Mini Vlog </span>📹
+				</a>
+
+				<!-- Digital Invitation -->
+				<a href="https://nelly-yusnita.github.io/undangdigitalajaclose/" class="content__item content__item-3" target="_blank">
+					<span>Digital Invitation </span>💐
+				</a>
+
+				<!-- Learn English -->
+				<a href="#" class="content__item content__item-4" target="_blank">
+					<span>Learn English </span>🗣️
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- ===== end content links ===== -->
+
+	<!-- ===== GALLERY ===== -->
+	<section class="gallery container section__line-bottom section__top-space">
+		<div class="gallery__container swiper">
+			<span class="gallery__title">Gallery🖼️ (10)</span>
+
+			<!-- Gallery swiper buttons -->
+			<div class="swiper-button-next">
+				<i class='bx bx-chevron-right'></i>
+			</div>
+			<div class="swiper-button-prev">
+				<i class='bx bx-chevron-left'></i>
+			</div>
+
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="gallery__box">
+						<a href="assets/img/gallery-1.jpg" data-fancybox="gallery" data-caption="Thank you for saving me✨">
+							<img src="assets/img/gallery-1.jpg" alt="gallery image" class="gallery__img">
+						</a>
+					</div>
 				</div>
 
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="gallery__box">
-							<a href="assets/img/gallery-1.jpg" data-fancybox="gallery" data-caption="Thank you for saving me✨">
-								<img src="assets/img/gallery-1.jpg" alt="gallery image" class="gallery__img">
-							</a>
-						</div>
+				<div class="swiper-slide">
+					<div class="gallery__box">
+						<a href="assets/img/gallery-2.jpg" data-fancybox="gallery" data-caption="Macha lovers🍵">
+							<img src="assets/img/gallery-2.jpg" alt="gallery image" class="gallery__img">
+						</a>
 					</div>
+				</div>
 
-					<div class="swiper-slide">
-						<div class="gallery__box">
-							<a href="assets/img/gallery-2.jpg" data-fancybox="gallery" data-caption="Macha lovers🍵">
-								<img src="assets/img/gallery-2.jpg" alt="gallery image" class="gallery__img">
-							</a>
-						</div>
+				<div class="swiper-slide">
+					<div class="gallery__box">
+						<a href="assets/img/gallery-3.jpg" data-fancybox="gallery" data-caption="Fav movie from Studio Ghibli🍃">
+							<img src="assets/img/gallery-3.jpg" alt="gallery image" class="gallery__img">
+						</a>
 					</div>
+				</div>
 
-					<div class="swiper-slide">
-						<div class="gallery__box">
-							<a href="assets/img/gallery-3.jpg" data-fancybox="gallery" data-caption="Fav movie from Studio Ghibli🍃">
-								<img src="assets/img/gallery-3.jpg" alt="gallery image" class="gallery__img">
-							</a>
-						</div>
+				<div class="swiper-slide">
+					<div class="gallery__box">
+						<a href="assets/img/gallery-4.jpg" data-fancybox="gallery" data-caption="NOT a religious person, but...">
+							<img src="assets/img/gallery-4.jpg" alt="gallery image" class="gallery__img">
+						</a>
 					</div>
+				</div>
 
-					<div class="swiper-slide">
-						<div class="gallery__box">
-							<a href="assets/img/gallery-4.jpg" data-fancybox="gallery" data-caption="NOT a religious person, but...">
-								<img src="assets/img/gallery-4.jpg" alt="gallery image" class="gallery__img">
-							</a>
-						</div>
+				<div class="swiper-slide">
+					<div class="gallery__box">
+						<a href="assets/img/gallery-5.jpg" data-fancybox="gallery" data-caption="When I don't know 'where to go', I'll take a long MRT trip without destination🚄">
+							<img src="assets/img/gallery-5.jpg" alt="gallery image" class="gallery__img">
+						</a>
 					</div>
+				</div>
 
-					<div class="swiper-slide">
-						<div class="gallery__box">
-							<a href="assets/img/gallery-5.jpg" data-fancybox="gallery" data-caption="When I don't know 'where to go', I'll take a long MRT trip without destination🚄">
-								<img src="assets/img/gallery-5.jpg" alt="gallery image" class="gallery__img">
-							</a>
-						</div>
+				<div class="swiper-slide">
+					<div class="gallery__box">
+						<a href="assets/img/gallery-6.jpg" data-fancybox="gallery" data-caption="Dear 2019, the sunset is beautiful, isn't it?☀️">
+							<img src="assets/img/gallery-6.jpg" alt="gallery image" class="gallery__img">
+						</a>
 					</div>
+				</div>
 
-					<div class="swiper-slide">
-						<div class="gallery__box">
-							<a href="assets/img/gallery-6.jpg" data-fancybox="gallery" data-caption="Dear 2019, the sunset is beautiful, isn't it?☀️">
-								<img src="assets/img/gallery-6.jpg" alt="gallery image" class="gallery__img">
-							</a>
-						</div>
+				<div class="swiper-slide">
+					<div class="gallery__box">
+						<a href="assets/img/gallery-7.jpg" data-fancybox="gallery" data-caption="Tired, but it's oke🌆">
+							<img src="assets/img/gallery-7.jpg" alt="gallery image" class="gallery__img">
+						</a>
 					</div>
+				</div>
 
-					<div class="swiper-slide">
-						<div class="gallery__box">
-							<a href="assets/img/gallery-7.jpg" data-fancybox="gallery" data-caption="Tired, but it's oke🌆">
-								<img src="assets/img/gallery-7.jpg" alt="gallery image" class="gallery__img">
-							</a>
-						</div>
+				<div class="swiper-slide">
+					<div class="gallery__box">
+						<a href="assets/img/gallery-8.jpg" data-fancybox="gallery" data-caption="🐈">
+							<img src="assets/img/gallery-8.jpg" alt="gallery image" class="gallery__img">
+						</a>
 					</div>
+				</div>
 
-					<div class="swiper-slide">
-						<div class="gallery__box">
-							<a href="assets/img/gallery-8.jpg" data-fancybox="gallery" data-caption="🐈">
-								<img src="assets/img/gallery-8.jpg" alt="gallery image" class="gallery__img">
-							</a>
-						</div>
+				<div class="swiper-slide">
+					<div class="gallery__box">
+						<a href="assets/img/gallery-9.jpg" data-fancybox="gallery" data-caption="idk why my brain so fresh at night🌌">
+							<img src="assets/img/gallery-9.jpg" alt="gallery image" class="gallery__img">
+						</a>
 					</div>
+				</div>
 
-					<div class="swiper-slide">
-						<div class="gallery__box">
-							<a href="assets/img/gallery-9.jpg" data-fancybox="gallery" data-caption="idk why my brain so fresh at night🌌">
-								<img src="assets/img/gallery-9.jpg" alt="gallery image" class="gallery__img">
-							</a>
-						</div>
-					</div>
-
-					<div class="swiper-slide">
-						<div class="gallery__box">
-							<a href="assets/img/gallery-10.jpg" data-fancybox="gallery" data-caption="no matter what, love urselft first🖤">
-								<img src="assets/img/gallery-10.jpg" alt="gallery image" class="gallery__img">
-							</a>
-						</div>
+				<div class="swiper-slide">
+					<div class="gallery__box">
+						<a href="assets/img/gallery-10.jpg" data-fancybox="gallery" data-caption="no matter what, love urselft first🖤">
+							<img src="assets/img/gallery-10.jpg" alt="gallery image" class="gallery__img">
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- end gallery -->
+	</section>
+	<!-- ===== end gallery ===== -->
 
-		<!-- Playlist -->
-		<div class="playlist container" id="playlist">
-			<span class="playlist__title">My Playlist💗🎵 (10)</span>
+	<!-- ===== PLAYLIST ===== -->
+	<section class="playlist container section__line-bottom section__top-space" id="playlist">
 
-			<div class="playlist__container">
-				<div class="playlist__content">
+		<div class="playlist__container">
+			<div class="playlist__content">
+				<img src="assets/img/playlist-section-img.gif" alt="playlist image" class="playlist__section-img">
+
+				<!-- Date & time -->
+				<div class="section__title">
+					<div class="section__title-line"></div>
+					<span>Check the time</span>
+				</div>
+
+				<div class="date__section">
+					<span id="day-name">Day</span>,
+					<span id="day-num">00</span>
+					<span id="month">Month</span>
+					<span id="year">Year</span>
+				</div>
+
+				<div class="time__section">
+					<div class="time__section-box">
+						<div id="hour">00</div>
+						<div id="minutes">00</div>
+						<div id="seconds">00</div>
+					</div>
+
+					<div class="period" id="period">AM</div>
+				</div>
+			</div>
+
+			<div class="playlist__content playlist__music">
+				<span class="playlist__music-title">My Playlist💗🎵 (10)</span>
+
+				<div class="playlist__music-content">
 					<div class="playlist__data">
-						<div class="playlist__img">
-							<img src="" alt="playlist image">
-						</div>
+						<img src="" alt="playlist image" class="playlist__img">
 
 						<div class="playlist__information">
 							<div class="song__info">
-								<h3 class="song__title">Style</h3>
-								<span class="song__artist">Taylor Swift</span>
+								<h3 class="song__title"></h3>
+								<span class="song__artist"></span>
 							</div>
 
 							<div class="playlist__progress-area">
@@ -269,76 +283,525 @@
 					</div>
 				</div>
 			</div>
-			<!-- end playlist -->
+		</div>
+	</section>
+	<!-- ===== end playlist ===== -->
+
+	<!-- ===== MOVIES ===== -->
+	<section class="movies container section__line-bottom section__top-space">
+		<div class="section__title">
+			<div class="section__title-line"></div>
+			<span>Movie time!</span>
 		</div>
 
-		<!-- Blog -->
-		<div class="blog container">
-			<div class="blog__content-box">
-				<span class="blog__title">Blog📑</span>
+		<div class="movies__container">
+			<div class="movie__content">
+				<img src="assets/img/movie-section-img.gif" alt="movies image" class="movie__section-img">
+				<div>🍿🎬🍟🎧💻</div>
+			</div>
 
-				<div class="blog__container swiper">
-					<div class="swiper-wrapper">
-						<!-- 1 -->
-						<div class="swiper-slide">
-							<div class="blog__content">
-								<div class="blog__img-box">
-									<img src="assets/img/gallery-2.jpg" alt="blog image">
-								</div>
+			<div class="movie__content movie__slides swiper">
+				<div class="swiper-wrapper">
+					<!-- 1 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-1.jpg" alt="movie poster" class="movie__poster">
 
-								<div class="blog__data">
-									<span class="blog__subtitle">Wed, 10 DEC 2022</span>
-									<h3 class="blog__title">Lorem ipsum, dolor sit.</h3>
-									<a href="#" class="blog__button">READ MORE</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- 2 -->
-						<div class="swiper-slide">
-							<div class="blog__content">
-								<div class="blog__img-box">
-									<img src="assets/img/gallery-8.jpg" alt="blog image">
-								</div>
-
-								<div class="blog__data">
-									<span class="blog__subtitle">Wed, 10 DEC 2022</span>
-									<h3 class="blog__title">Lorem ipsum, dolor sit.</h3>
-									<a href="#" class="blog__button">READ MORE</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- 3 -->
-						<div class="swiper-slide">
-							<div class="blog__content">
-								<div class="blog__img-box">
-									<img src="assets/img/gallery-7.jpg" alt="blog image">
-								</div>
-
-								<div class="blog__data">
-									<span class="blog__subtitle">Wed, 10 DEC 2022</span>
-									<h3 class="blog__title">Lorem ipsum, dolor sit.</h3>
-									<a href="#" class="blog__button">READ MORE</a>
-								</div>
+							<div class="movie__info">
+								<h3 class="movie__title">Spirited Away👻</h3>
+								<span class="movie__year">(2001)</span>
 							</div>
 						</div>
 					</div>
 
-					<!-- Navigation -->
-					<div class="swiper-button-next">
-						<i class='bx bx-chevron-right'></i>
+					<!-- 2 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-2.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Howl's Moving Castle🔥</h3>
+								<span class="movie__year">(2004)</span>
+							</div>
+						</div>
 					</div>
 
-					<div class="swiper-button-prev">
-						<i class='bx bx-chevron-left'></i>
+					<!-- 3 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-3.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Ponyo🐟</h3>
+								<span class="movie__year">(2008)</span>
+							</div>
+						</div>
 					</div>
+
+					<!-- 4 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-4.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Princess Mononoke🐺</h3>
+								<span class="movie__year">(1997)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 5 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-5.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">My Neighbor Totoro☔</h3>
+								<span class="movie__year">(1988)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 6 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-6.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Whisper of the Heart🎻</h3>
+								<span class="movie__year">(1995)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 7 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-7.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Kiki's Delivery Service🎀</h3>
+								<span class="movie__year">(1989)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 8 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-8.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">From Up on Poppy Hill🚢</h3>
+								<span class="movie__year">(2011)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 9 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-9.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Better Days💔</h3>
+								<span class="movie__year">(2019)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 10 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-10.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">My Blue Summber📘</h3>
+								<span class="movie__year">(2022)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 11 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-11.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">You Are the Apple of My Eye🍎</h3>
+								<span class="movie__year">(2011)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 12 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-12.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">She's the Man💋</h3>
+								<span class="movie__year">(2006)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 13 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-13.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Enola Holmes🕵️</h3>
+								<span class="movie__year">(2020)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 14 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-14.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Enola Holmes 2🕵️</h3>
+								<span class="movie__year">(2022)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 15 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-15.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Bad Genius✏️</h3>
+								<span class="movie__year">(2017)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 16 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-16.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Mr. Queen👑</h3>
+								<span class="movie__year">(2020)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 17 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-17.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Hotel del Luna👻</h3>
+								<span class="movie__year">(2019)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 18 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-18.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Princess Hours👑</h3>
+								<span class="movie__year">(2006)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 19 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-19.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Coffee Prince☕</h3>
+								<span class="movie__year">(2007)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 20 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-20.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">To All the Boys I've Loved Before💌</h3>
+								<span class="movie__year">2022</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 21 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-21.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">100 Days My Prince👑</h3>
+								<span class="movie__year">(2018)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 22 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-22.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">A Love So Beautiful💛</h3>
+								<span class="movie__year">(2017)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 23 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-23.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">D.P.</h3>
+								<span class="movie__year">(2021)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 24 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-24.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">The Glory🤍</h3>
+								<span class="movie__year">(2022)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 25 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-25.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Replay 1988👨‍👩‍👧</h3>
+								<span class="movie__year">(2015)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 26 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-26.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Itaewon Class🌃</h3>
+								<span class="movie__year">(2020)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 27 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-27.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Cheese in the Trap💛</h3>
+								<span class="movie__year">(2016)</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- 28 -->
+					<div class="movie__slide swiper-slide">
+						<div class="movie__data">
+							<img src="assets/img/movie-28.jpg" alt="movie poster" class="movie__poster">
+
+							<div class="movie__info">
+								<h3 class="movie__title">Purple Hearts💜</h3>
+								<span class="movie__year">(2022)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Navigation -->
+				<div class="swiper-button-next">
+					<i class='bx bx-chevron-right'></i>
+				</div>
+
+				<div class="swiper-button-prev">
+					<i class='bx bx-chevron-left'></i>
 				</div>
 			</div>
 		</div>
-		<!-- end blog -->
-	</main>
-	<!-- ===== end main ===== -->
+	</section>
+	<!-- ===== end movies ===== -->
+
+	<!-- ===== BOOKS ===== -->
+	<section class="books container section__line-bottom section__top-space">
+		<div class="section__title">
+			<div class="section__title-line"></div>
+			<span>Fav Books</span>
+		</div>
+
+		<div class="books__container">
+			<div class="books__content books__slides swiper">
+				<div class="swiper-wrapper">
+					<!-- 1 -->
+					<div class="books__slide swiper-slide">
+						<div class="books__data">
+							<img src="assets/img/book1.jpg" alt="book image" class="book__img">
+
+							<h3 class="books__title">Atomic Habits</h3>
+							<span class="books__writer">(James Clear)</span>
+						</div>
+					</div>
+
+					<!-- 2 -->
+					<div class="books__slide swiper-slide">
+						<div class="books__data">
+							<img src="assets/img/book2.jpeg" alt="book image" class="book__img">
+
+							<h3 class="books__title">How to Respect Myselft</h3>
+							<span class="books__writer">(Yoon Hong Gyun)</span>
+						</div>
+					</div>
+
+					<!-- 3 -->
+					<div class="books__slide swiper-slide">
+						<div class="books__data">
+							<img src="assets/img/book3.jpg" alt="book image" class="book__img">
+
+							<h3 class="books__title">Filosofi Teras</h3>
+							<span class="books__writer">(Henry Manampiring)</span>
+						</div>
+					</div>
+
+					<!-- 4 -->
+					<div class="books__slide swiper-slide">
+						<div class="books__data">
+							<img src="assets/img/book4.jpeg" alt="book image" class="book__img">
+
+							<h3 class="books__title">You Do You</h3>
+							<span class="books__writer">(Fellexandro Ruby)</span>
+						</div>
+					</div>
+
+					<!-- 5 -->
+					<div class="books__slide swiper-slide">
+						<div class="books__data">
+							<img src="assets/img/book5.jpeg" alt="book image" class="book__img">
+
+							<h3 class="books__title">Loving Wounded Soul</h3>
+							<span class="books__writer">(Regis Machdy)</span>
+						</div>
+					</div>
+
+					<!-- 6 -->
+					<div class="books__slide swiper-slide">
+						<div class="books__data">
+							<img src="assets/img/book6.jpeg" alt="book image" class="book__img">
+
+							<h3 class="books__title">I Want to Die But I Want to Eat Tteokpokki</h3>
+							<span class="books__writer">(Baek Se-hee)</span>
+						</div>
+					</div>
+
+					<!-- 7 -->
+					<div class="books__slide swiper-slide">
+						<div class="books__data">
+							<img src="assets/img/book7.jpg" alt="book image" class="book__img">
+
+							<h3 class="books__title">Siapa yang Datang ke Pemakamanku</h3>
+							<span class="books__writer">(Kim Sang Hyun)</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<div class="books__content">
+				<img src="assets/img/books-section-img.gif" alt="books image" class="book__section-img">
+				<div>📗🍵🥯🧃🍟</div>
+			</div>
+		</div>
+	</section>
+	<!-- ===== end books -->
+
+	<!-- ===== BLOG ===== -->
+	<div class="blog container section__top-space">
+		<span class="blog__title">Blog/Portfolio📑</span>
+
+		<div class="blog__container swiper">
+			<div class="swiper-wrapper">
+				<!-- 1 -->
+				<div class="blog__slide swiper-slide">
+					<div class="blog__content">
+						<img src="assets/img/blog1.PNG" alt="blog image" class="blog__img">
+
+						<div class="blog__data">
+							<span class="blog__subtitle">Wed, 10 DEC 2022</span>
+							<h3 class="blog__title">COFFEE.</h3>
+							<a href="https://nelly-yusnita.github.io/coffee_/" class="blog__button" target="_blank">VIEW WEB</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- 2 -->
+				<div class="blog__slide swiper-slide">
+					<div class="blog__content">
+						<img src="assets/img/blog2.PNG" alt="blog image" class="blog__img">
+
+						<div class="blog__data">
+							<span class="blog__subtitle">Wed, 10 DEC 2022</span>
+							<h3 class="blog__title">WATCH</h3>
+							<a href="https://nelly-yusnita.github.io/watch_/" class="blog__button" target="_blank">VIEW WEB</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- 3 -->
+				<div class="blog__slide swiper-slide">
+					<div class="blog__content">
+						<img src="assets/img/blog3.PNG" alt="blog image" class="blog__img">
+
+						<div class="blog__data">
+							<span class="blog__subtitle">Wed, 10 DEC 2022</span>
+							<h3 class="blog__title">PLANTS</h3>
+							<a href="https://nelly-yusnita.github.io/plants_/" class="blog__button" target="_blank">VIEW WEB</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Navigation -->
+			<div class="swiper-button-next">
+				<i class='bx bx-chevron-right'></i>
+			</div>
+
+			<div class="swiper-button-prev">
+				<i class='bx bx-chevron-left'></i>
+			</div>
+		</div>
+	</div>
+	<!-- ===== end blog ===== -->
 
 	<!-- ===== FOOTER ===== -->
 	<div class="footer container">
