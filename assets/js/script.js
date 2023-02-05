@@ -417,6 +417,6 @@ const sr = ScrollReveal({
 	// reset: true// animation repeat //
 })
 
-sr.reveal(`.section__title, .playlist__music-title, .blog__title, .bio__container, .gallery__container, .blog__container`)
+sr.reveal(`.section__title, .playlist__music-title, .blog__title-section, .bio__container, .gallery__container, .blog__container`)
 sr.reveal(`.content__container .content__box:first-child, .playlist__container .playlist__content:first-child, .movies__container .movie__content:first-child, .books__slides`, {origin: 'left'})
 sr.reveal(`.content__container .content__box:nth-child(2), .playlist__music, .movie__slides, .books__container .books__content:nth-child(2)`, {origin: 'right'})
