@@ -28,7 +28,7 @@ const swiperGallery = new Swiper(".gallery__container", {
 	spaceBetween: 10,
 	grabCursor: true,
 	slidesPerView: 'auto',
-	loop: 'true',
+	// loop: 'true',
 
 	navigation: {
 		nextEl: ".swiper-button-next",
