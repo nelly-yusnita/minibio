@@ -25,7 +25,7 @@ themeButton.addEventListener('click', () => {
 
 // ===== GALLERY ===== //
 const swiperGallery = new Swiper(".gallery__container", {
-	spaceBetween: 10,
+	spaceBetween: 15,
 	grabCursor: true,
 	slidesPerView: 'auto',
 	// loop: 'true',
@@ -85,7 +85,7 @@ let allMusic = [
 	// 1. Taylor Swift - Style
 	{
 		name:"Style",
-		artist: "Taylor Swift",
+		artist: "(Taylor Swift)",
 		img: "music1",
 		src: "Taylor Swift - Style"
 	},
@@ -93,7 +93,7 @@ let allMusic = [
 	// 2. Taylor Swift - You re On Your Own Kid
 	{
 		name:"You're On Your Own Kid",
-		artist: "Taylor Swift",
+		artist: "(Taylor Swift)",
 		img: "music2",
 		src: "Taylor Swift - You re On Your Own Kid"
 	},
@@ -109,7 +109,7 @@ let allMusic = [
 	// 4. Dido - White Flag
 	{
 		name:"White Flag",
-		artist: "Dido",
+		artist: "(Dido)",
 		img: "music4",
 		src: "Dido - White Flag"
 	},
@@ -117,7 +117,7 @@ let allMusic = [
 	// 5. TULUS - Remedi
 	{
 		name:"Remedi",
-		artist: "TULUS",
+		artist: "(TULUS)",
 		img: "music5",
 		src: "TULUS - Remedi"
 	},
@@ -125,7 +125,7 @@ let allMusic = [
 	// 6. Blackpink - Tally
 	{
 		name:"Tally",
-		artist: "BLACKPINK",
+		artist: "(BLACKPINK)",
 		img: "music6",
 		src: "BLACKPINK - Tally"
 	},
@@ -133,7 +133,7 @@ let allMusic = [
 	// 7. IU - Dear Name
 	{
 		name:"Dear Name",
-		artist: "IU",
+		artist: "(IU)",
 		img: "music7",
 		src: "IU - Dear Name"
 	},
@@ -141,7 +141,7 @@ let allMusic = [
 	// 8. Hindia - Evaluasi
 	{
 		name:"Evaluasi",
-		artist: "Hindia",
+		artist: "(Hindia)",
 		img: "music8",
 		src: "Hindia - Evaluasi"
 	},
@@ -149,7 +149,7 @@ let allMusic = [
 	// 9. The Rose - Definition of ugly
 	{
 		name:"Definition of ugly is",
-		artist: "The Rose",
+		artist: "(The Rose)",
 		img: "music9",
 		src: "The Rose - Definition of ugly"
 	},
@@ -157,7 +157,7 @@ let allMusic = [
 	// 10. Jehwi - Looks Like a Real Thing
 	{
 		name:"Looks Like a Real Thing",
-		artist: "Jehwi",
+		artist: "(Jehwi)",
 		img: "music10",
 		src: "Jehwi - Looks Like a Real Thing"
 	}
@@ -188,97 +188,95 @@ function loadMusic(indexNumb){
 	mainAudio.src = `assets/audio/${allMusic[indexNumb - 1].src}.mp3`;
 }
 
-//play music function
+// Play music function
 function playMusic(){
 	playlist.classList.add("paused");
 	playPauseBtn.querySelector("i").innerText = "pause";
 	mainAudio.play();
 }
 
-//pause music function
+// Pause music function
 function pauseMusic(){
 	playlist.classList.remove("paused");
 	playPauseBtn.querySelector("i").innerText = "play_arrow";
 	mainAudio.pause();
 }
 
-//prev music function
+// Prev music function
 function prevMusic(){
-	musicIndex--; //decrement of musicIndex by 1
-	//if musicIndex is less than 1 then musicIndex will be the array length so the last music play
+	musicIndex--;
 	musicIndex < 1 ? musicIndex = allMusic.length : musicIndex = musicIndex;
 	loadMusic(musicIndex);
 	playMusic();
 }
 
-//next music function
+// Next music function
 function nextMusic(){
-	musicIndex++; //increment of musicIndex by 1
-	//if musicIndex is greater than array length then musicIndex will be 1 so the first music play
+	musicIndex++;
 	musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex;
 	loadMusic(musicIndex);
 	playMusic(); 
 }
 
-// play or pause button event
+// Play or pause button event
 playPauseBtn.addEventListener("click", ()=>{
 	const isMusicPlay = playlist.classList.contains("paused");
-	//if isPlayMusic is true then call pauseMusic else call playMusic
 	isMusicPlay ? pauseMusic() : playMusic();
 });
 
-//prev music button event
+// Prev music button event
 prevBtn.addEventListener("click", ()=>{
 	prevMusic();
 });
 
-//next music button event
+// Next music button event
 nextBtn.addEventListener("click", ()=>{
 	nextMusic();
 });
 
-// update progress bar width according to music current time
+// Update progress bar width according to music current time
 mainAudio.addEventListener("timeupdate", (e)=>{
-	const currentTime = e.target.currentTime; //getting playing song currentTime
-	const duration = e.target.duration; //getting playing song total duration
+	const currentTime = e.target.currentTime;
+	const duration = e.target.duration;
 	let progressWidth = (currentTime / duration) * 100;
 	progressBar.style.width = `${progressWidth}%`;
 
 	let musicCurrentTime = playlist.querySelector(".song__current"),
 	musicDuartion = playlist.querySelector(".song__duration");
 	mainAudio.addEventListener("loadeddata", ()=>{
-		// update song total duration
+		// Update song total duration
 		let mainAdDuration = mainAudio.duration;
 		let totalMin = Math.floor(mainAdDuration / 60);
 		let totalSec = Math.floor(mainAdDuration % 60);
-		if(totalSec < 10){ //if sec is less than 10 then add 0 before it
+		if(totalSec < 10){
 			totalSec = `0${totalSec}`;
 		}
 		musicDuartion.innerText = `${totalMin}:${totalSec}`;
 	});
-	// update playing song current time
+
+	// Update playing song current time
 	let currentMin = Math.floor(currentTime / 60);
 	let currentSec = Math.floor(currentTime % 60);
-	if(currentSec < 10){ //if sec is less than 10 then add 0 before it
+	if(currentSec < 10){
 		currentSec = `0${currentSec}`;
 	}
 	musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
 });
 
-// update playing song currentTime on according to the progress bar width
+// Update playing song currentTime on according to the progress bar width
 progressArea.addEventListener("click", (e)=>{
-	let progressWidth = progressArea.clientWidth; //getting width of progress bar
-	let clickedOffsetX = e.offsetX; //getting offset x value
-	let songDuration = mainAudio.duration; //getting song total duration
+	let progressWidth = progressArea.clientWidth;
+	let clickedOffsetX = e.offsetX; 
+	let songDuration = mainAudio.duration;
 	
 	mainAudio.currentTime = (clickedOffsetX / progressWidth) * songDuration;
-	playMusic(); //calling playMusic function
+	playMusic();
 });
 
-//change loop, shuffle, repeat icon onclick
+// Change loop, shuffle, repeat icon onclick
 const repeatBtn = playlist.querySelector("#repeat-playlist");
 repeatBtn.addEventListener("click", ()=>{
-	let getText = repeatBtn.innerText; //getting this tag innerText
+	let getText = repeatBtn.innerText;
 	switch(getText){
 		case "repeat":
 			repeatBtn.innerText = "repeat_one";
@@ -295,26 +293,24 @@ repeatBtn.addEventListener("click", ()=>{
 	}
 });
 
-//code for what to do after song ended
+// Code for what to do after song ended
 mainAudio.addEventListener("ended", ()=>{
-	// we'll do according to the icon means if user has set icon to
-	// loop song then we'll repeat the current song and will do accordingly
-	let getText = repeatBtn.innerText; //getting this tag innerText
+	let getText = repeatBtn.innerText;
 	switch(getText){
 		case "repeat":
-			nextMusic(); //calling nextMusic function
+			nextMusic();
 			break;
 		case "repeat_one":
-			mainAudio.currentTime = 0; //setting audio current time to 0
-			loadMusic(musicIndex); //calling loadMusic function with argument, in the argument there is a index of current song
-			playMusic(); //calling playMusic function
+			mainAudio.currentTime = 0;
+			loadMusic(musicIndex);
+			playMusic();
 			break;
 		case "shuffle":
-			let randIndex = Math.floor((Math.random() * allMusic.length) + 1); //genereting random index/numb with max range of array length
+			let randIndex = Math.floor((Math.random() * allMusic.length) + 1); 
 			do{
 				randIndex = Math.floor((Math.random() * allMusic.length) + 1);
-			}while(musicIndex == randIndex); //this loop run until the next random number won't be the same of current musicIndex
-			musicIndex = randIndex; //passing randomIndex to musicIndex
+			}while(musicIndex == randIndex);
+			musicIndex = randIndex;
 			loadMusic(musicIndex);
 			playMusic();
 			break;
