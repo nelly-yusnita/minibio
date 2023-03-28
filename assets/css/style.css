@@ -77,7 +77,6 @@ video{
 }
 main{
    overflow: hidden; /* For reveal animation */
-   padding-bottom: 3rem;
 }
 /* ===== end base ===== */
 
@@ -206,8 +205,8 @@ body.dark-theme{
 .content__images,
 .content__shape-img,
 .content__profile{
-   width: 250px;
-   height: 250px;
+   width: 200px;
+   height: 200px;
 }
 .content__shape-img,
 .content__profile{
@@ -223,6 +222,7 @@ body.dark-theme{
 .content__hobbies{
    text-align: center;
    margin-bottom: 1.75rem;
+   font-size: var(--normal-font-size);
 }
 
 /* Social Media */
@@ -754,14 +754,14 @@ body.dark-theme{
    position: relative;
 }
 .vision__img-bg{
-   width: 200px;
+   width: 160px;
 }
 .vision__img{
    position: absolute;
    top: 50%;
    transform: translateY(-50%);
    right: 0;
-   width: 90%;
+   width: 95%;
    object-fit: cover;
 }
 .vision__title{
@@ -769,7 +769,7 @@ body.dark-theme{
    top: -1.25rem;
    left: .75rem;
    font-size: 3.5rem;
-   -webkit-text-stroke: 2px var(--green-color-4);
+   -webkit-text-stroke: 2px #FFF;
    color: transparent;
    width: max-content;
    z-index: 10;
@@ -928,6 +928,12 @@ body.dark-theme{
    /* ===== end bio ===== */
 
    /* ===== CONTENTS ===== */
+   .content__images,
+   .content__shape-img,
+   .content__profile{
+      width: 250px;
+      height: 250px;
+   }
    .content__section-img{
       left: -4.25rem;
       bottom: -5.5rem;
@@ -972,10 +978,10 @@ body.dark-theme{
 
    /* ===== VISION BOARD ===== */
    .vision__img-bg{
-      width: 300px;
+      width: 225px;
    }
    .vision__title{
-      top: 0;
+      top: -1rem;
    }
    .vasion__section-img{
       right: -2rem;
@@ -1031,7 +1037,6 @@ body.dark-theme{
    }
    .content__hobbies{
       text-align: initial;
-      font-size: var(--normal-font-size);
    }
    .social__media{
       justify-content: initial;
