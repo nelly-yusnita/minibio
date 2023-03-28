@@ -101,7 +101,7 @@ let allMusic = [
 	// 3. Taylor Swift - Cardigan
 	{
 		name:"Cardigan",
-		artist: "Taylor Swift",
+		artist: "(Taylor Swift)",
 		img: "music3",
 		src: "Taylor Swift - Cardigan"
 	},
@@ -184,7 +184,7 @@ window.addEventListener("load", ()=>{
 function loadMusic(indexNumb){
 	musicName.innerText = allMusic[indexNumb - 1].name;
 	musicArtist.innerText = allMusic[indexNumb - 1].artist;
-	musicImg.src = `assets/img/${allMusic[indexNumb - 1].img}.jpg`;
+	musicImg.src = `assets/img/musics/${allMusic[indexNumb - 1].img}.jpg`;
 	mainAudio.src = `assets/audio/${allMusic[indexNumb - 1].src}.mp3`;
 }
 
@@ -347,7 +347,7 @@ const moviesSwiper = new Swiper('.movie__slides', {
 
 // ===== BOOKS ===== //
 const booksSwiper = new Swiper('.books__slides', {
-	spaceBetween: 24,
+	spaceBetween: 20,
 	loop: true,
 	grabCursor: true,
 
@@ -413,6 +413,7 @@ const sr = ScrollReveal({
 	// reset: true// animation repeat //
 })
 
-sr.reveal(`.section__title, .playlist__music-title, .blog__title-section, .bio__container, .gallery__container, .blog__container`)
-sr.reveal(`.content__container .content__box:first-child, .playlist__container .playlist__content:first-child, .movies__container .movie__content:first-child, .books__slides`, {origin: 'left'})
-sr.reveal(`.content__container .content__box:nth-child(2), .playlist__music, .movie__slides, .books__container .books__content:nth-child(2)`, {origin: 'right'})
+sr.reveal(`.bio__container, .gallery__container, .section__title, .vision__title, .blog__title-section, .blog__container`);
+sr.reveal(`.content__box:first-child, .playlist__times, .movie__content:first-child, .books__content:first-child`, {origin: 'left'});
+sr.reveal(`.content__box:nth-child(2), .playlist__music, .movie__slides, .books__content:nth-child(2), .vision__img`, {origin: 'right'})
+sr.reveal(`.vision__img-bg`, {origin: 'bottom'})
