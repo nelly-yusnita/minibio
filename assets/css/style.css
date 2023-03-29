@@ -407,21 +407,12 @@ body.dark-theme{
    margin-bottom: 1rem;
 }
 .time__number{
-   position: relative;
    padding: 1rem .5rem 1.2rem;
    text-align: center;
    font-size: 2.5rem;
    font-weight: 700;
    color: #141414;
    margin-bottom: 0.5rem;
-}
-.time__number::after{
-   content: '';
-   position: absolute;
-   top: -.25rem;
-   right: -.25rem;
-   width: 100%;
-   height: 100%;
    border: 1px solid #141414;
 }
 .hour__number{
