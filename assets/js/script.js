@@ -415,5 +415,5 @@ const sr = ScrollReveal({
 
 sr.reveal(`.bio__container, .gallery__container, .section__title, .vision__title, .blog__title-section, .blog__container`);
 sr.reveal(`.content__box:first-child, .playlist__times, .movie__content:first-child, .books__content:first-child`, {origin: 'left'});
-sr.reveal(`.content__box:nth-child(2), .playlist__music, .movie__slides, .books__content:nth-child(2), .vision__img`, {origin: 'right'})
+sr.reveal(`.content__box:nth-child(2), .playlist__music, .movie__slides, .books__content:nth-child(2)`, {origin: 'right'})
 sr.reveal(`.vision__img-bg`, {origin: 'bottom'})
