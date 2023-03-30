@@ -130,6 +130,11 @@ body.dark-theme{
 .dark-theme .gallery .swiper-button-prev i{
    color: #FFF;
 }
+
+.dark-theme .social__button-link,
+.dark-theme .time__number{
+   border-color: var(--green-color-2);
+}
 /* ===== end dark theme ===== */
 
 /* ===== HEADER ===== */
