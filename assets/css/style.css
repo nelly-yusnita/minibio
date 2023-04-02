@@ -131,10 +131,12 @@ body.dark-theme{
    color: #FFF;
 }
 
+/* Contents Link + Playlist */
 .dark-theme .social__button-link,
 .dark-theme .time__number{
    border-color: var(--green-color-2);
 }
+
 /* ===== end dark theme ===== */
 
 /* ===== HEADER ===== */
@@ -225,9 +227,9 @@ body.dark-theme{
    left: 1.5rem;
 }
 .content__hobbies{
-   text-align: center;
    margin-bottom: 1.75rem;
-   font-size: var(--small-font-size)
+   font-size: var(--normal-font-size);
+   text-align: center;
 }
 
 /* Social Media */
@@ -965,7 +967,7 @@ body.dark-theme{
    /* ===== BOOKS ===== */
    .books__section-img{
       position: absolute;
-      left: -2.37rem;
+      left: -2.4rem;
       bottom: -4rem;
       width: 130px;
       transform: rotate(25deg);
