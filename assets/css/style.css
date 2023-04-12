@@ -228,7 +228,7 @@ body.dark-theme{
 }
 .content__hobbies{
    margin-bottom: 1.75rem;
-   font-size: var(--normal-font-size);
+   font-size: var(--small-font-size);
    text-align: center;
 }
 
