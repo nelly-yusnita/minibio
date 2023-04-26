@@ -187,7 +187,7 @@ body.dark-theme{
    width: max-content;
    font-family: var(--title-font);
    font-size: var(--h2-font-size);
-   margin-bottom: 0.25rem;
+   margin-bottom: 0.5rem;
 }
 .bio__name::before{
    content: '';
@@ -248,6 +248,7 @@ body.dark-theme{
 }
 .content__icons{
    margin-bottom: 1rem;
+   text-align: center;
 }
 
 /* Social Media */
@@ -1084,6 +1085,9 @@ body.dark-theme{
    .content__images{
       margin-left: initial;
       margin-right: initial;
+   }
+   .content__icons{
+      text-align: initial;
    }
    .social__media{
       justify-content: initial;
